@@ -7,6 +7,15 @@ export default () => {
     return (
         <div className = "landingPage">
             <VideoCard/>
+            <VideoCard/>
+            <VideoCard/>
+            <VideoCard/>
+            <VideoCard/>
+            <VideoCard/>
+            <VideoCard/>
+            <VideoCard/>
+            <VideoCard/>
+            <VideoCard/>
         </div>
     )
 }
