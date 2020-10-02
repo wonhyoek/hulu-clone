@@ -1,21 +1,18 @@
 import React from 'react';
 import VideoCard from '../VideoCard/VideoCard';
 import './LandingPage.css';
+import FlipMove from "react-flip-move";
 
 
-export default () => {
+export default ({Movies}) => {
+
     return (
         <div className = "landingPage">
-            <VideoCard/>
-            <VideoCard/>
-            <VideoCard/>
-            <VideoCard/>
-            <VideoCard/>
-            <VideoCard/>
-            <VideoCard/>
-            <VideoCard/>
-            <VideoCard/>
-            <VideoCard/>
+            <FlipMove>
+                {Movies.map(movie => (
+                    <VideoCard movie = {movie} key = {movie.id} />
+                ))}
+            </FlipMove>
         </div>
     )
 }
